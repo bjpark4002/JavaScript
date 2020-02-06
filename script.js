@@ -41,16 +41,19 @@ function compareNumbers(a, b) {
   }
 
 function secondSmallBig(){
-    var numList=[0,1,2,3,4,5,6,7,8,9]
+
+    '1,6,2,3,5'
+
+
     var arrayInput = document.getElementById("arrayInput").value
     arrayInput=arrayInput.substr(1)
     arrayInput=arrayInput.slice(0,-1)
     arrayInput=arrayInput.split(",")
-    var i;
+    var i;          //i<5
     for(i =0 ; i< arrayInput.length; i++){
-    arrayInput[i]=parseInt(arrayInput[i],10)
+    arrayInput[i]=parseInt(arrayInput[i],10)  
     }
-
+    
     arrayInput=arrayInput.sort(function(a,b) { return a - b; });
     document.getElementById("arrayInputAns").innerHTML = "<br>Sorted Form : "+arrayInput+"<br>2nd smallest : "+arrayInput[0] + "<br>2nd biggest : "+arrayInput[arrayInput.length-2]
     // arrayInput+" "+i + typeof(arrayInput)+" "+typeof(arrayInput[0])
