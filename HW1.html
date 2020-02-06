@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <h1>Please Enter Your Details For Our Dating Website</h1>
+    <form>
+      <fieldset>
+        <legend>Your Face</legend>
+        <label>Your image:</label><input type="file" accept="image/* | audio/* | video/*"><br>
+        <label >Image preview:</label><img id='selectedImg' src='#' alt='Your Image'><br>
+      </fieldset> <br>
+    </form>
+    
+    <form>
+      <fieldset>
+        <legend>Your General Details</legend>
+        
+          <label class="ex1">Name:</label> <input type="text"onmouseover name="Name" placeholder="Your Full Name" required  >
+        <br>
+          <label>Gender:</label> 
+            <input type="radio" name = "GenderName" value = "Male"> Male
+            <input type="radio" name = "GenderName" value = "Female"> Female<br>
+          <label>Age:</label> <input type="number" name="Age" value='18' required> <br>
+          <label>Date of Birth:</label> <input type="Date" name="DateOfBirth" required> <br>
+          <label>Favorite color:</label> <input type="color" name="FavoriteColor" required> <br>
+          <label>Which Country: </label>
+          <input type="text" list="browsers" name="favorite_browser" required>
+        		<datalist id="browsers">
+        			<option value="Korea">
+        			<option value="USA">    
+        			<option value="UK">
+        			<option value="China">
+        			<option value="Japan">
+              <option value="Russia">
+              <option value="Mexico">
+        		</datalist>
+      </fieldset> <br>
+    </form>
+    
+    <form>
+      <fieldset >
+        <legend>Your Indicators</legend>
+        <label>Height: </label>
+        <span class="redColor1"> Short</span>
+        <input type="range" name="Height" required>
+        <span class="purpleColor1">Tall</span> <br>
+        
+        
+        <label>Salary:</label>
+        <span class="redColor1"> Poor</span>
+        <input type="range" name="Salary" required> 
+        <span class="purpleColor1"> Rich</span>
+      </fieldset> <br>
+    </form>
+    
+    <form>
+      <fieldset >
+        <legend>Your Contact Information</legend>
+        <label>Email:</label> <input type="email" name="Email:" required> <br>
+        <label>Mobile:</label> <input type="phone" name="Mobile:" required> <br>
+        <label>Address:</label> <textarea name = "Address:" required></textarea><br>
+        
+        Method to contact you:
+        <input type = "checkbox" name = "checkbox1" value = " Email" > Email
+        <input type = "checkbox" name = "checkbox2" value = " WhatsApp"  > WhatsApp 
+        <input type = "checkbox" name = "checkbox3" value = " InAppChat" > In-app Chat 
+         
+      </fieldset>
+      <button >Submit</button>
+    </form>
+    
+    
+    
+  </body>
+
+</html>

@@ -1,0 +1,35 @@
+/* Styles go here */
+
+fieldset { 
+    margin-left : 1;
+    display: block;
+    border: 5px solid #FFFF1B;
+    background:#FFFFC4;
+    padding : 10px;
+  }
+    
+  label{
+    margin-left : 40px;
+    float:left ;
+    text-align:right;
+    width:200px;
+  }
+  
+  /* Tooltip container */
+  .tooltip {
+    
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  .ex1:hover{
+    font-size : 150%;
+  }
+  
+  .redColor1{
+    background : #B43A16;
+  }
+  .purpleColor1{
+    background : #6D3989;
+  }
